@@ -8,9 +8,9 @@ import Layout from "../layouts/Layout.astro";
       id="content"
       class="w-100 h-100 flex justify-center items-center helvetica tc flex-column z-999"
     >
-      <div class="b ttu white f3 self-start pl3 pt3">911 Massage</div>
+      <div class="b ttu white f3 self-start pl3 pt3 z-999">911 Massage</div>
       <div class="h-100 flex justify-center items-center">
-        <div class="ph1">
+        <div class="ph1 z-999">
           <p class="ttu white f6">Coming to Broward County in 2024</p>
           <h1 class="white ttu f3 f1-ns lh-title">
             Affordable massage therapy for first responders
@@ -47,6 +47,7 @@ import Layout from "../layouts/Layout.astro";
     position: relative;
   }
 
+  #content::after,
   #content::before {
     content: "";
     position: absolute;
@@ -55,6 +56,6 @@ import Layout from "../layouts/Layout.astro";
     width: 100%;
     height: 100%;
     background-color: var(--brand-red);
-    opacity: 0.45;
+    opacity: 0.3;
   }
 </style>
