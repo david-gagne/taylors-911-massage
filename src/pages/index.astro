@@ -1,0 +1,60 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="911 Massage">
+  <main class="w-100 vh-100">
+    <section
+      id="content"
+      class="w-100 h-100 flex justify-center items-center helvetica tc flex-column z-999"
+    >
+      <div class="b ttu white f3 self-start pl3 pt3">911 Massage</div>
+      <div class="h-100 flex justify-center items-center">
+        <div class="ph1">
+          <p class="ttu white f6">Coming to Broward County in 2024</p>
+          <h1 class="white ttu f3 f1-ns lh-title">
+            Affordable massage therapy for first responders
+          </h1>
+          <p class="white lh-copy f5 f3-ns fw3 measure-narrow center">
+            Hey, it's Taylor! While my website is still under construction, <strong
+              >let's connect!</strong
+            >
+          </p>
+
+          <button class="br2 ba b--white b ttu mt4">Sign me up</button>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  h1 {
+    max-width: 900px;
+  }
+
+  button {
+    width: 140px;
+    height: 40px;
+    color: var(--brand-red);
+  }
+
+  #content {
+    background-image: url("../images/teaser-bg-image.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  #content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--brand-red);
+    opacity: 0.45;
+  }
+</style>
