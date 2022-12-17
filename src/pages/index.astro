@@ -53,12 +53,12 @@ import Layout from "../layouts/Layout.astro";
       id="modal-card"
       class="w-90 mw6 bg-white ba b--white br4 z-max pv3 overflow-scroll mv4"
     >
-      <div class="flex justify-center items-center">
-        <div>
-          <h2 class="f5 lh-title tc w-90 center">
-            Thank you for your interest in my new business, 911 Massage!
+      <div class="flex justify-center items-center center w-90">
+        <div class="center">
+          <h2 class="f6 f4-ns lh-title tc">
+            Thank you for your interest <br /> in my new business, 911 Massage!
           </h2>
-          <p class="gray f6 lh-copy ph3 bb b--light-gray center pb3">
+          <p class="gray f6 lh-copy bb b--light-gray center pb4 w-90">
             Go ahead and fill out the little form below so I know it's OK to
             reach out to you in the future. <br /><br />
 
@@ -73,7 +73,7 @@ import Layout from "../layouts/Layout.astro";
       <form
         name="sign-up"
         method="POST"
-        class="center w-100 flex justify-center items-center pv2"
+        class="center w-100 flex justify-center items-center pv2 mt3"
         data-netlify="true"
       >
         <div class="w-90">
@@ -129,7 +129,7 @@ import Layout from "../layouts/Layout.astro";
           </div>
 
           <input
-            class="w-100 mt3 br4 ba b--white ttu b white"
+            class="w-100 mt4 br4 ba b--white ttu b white"
             type="submit"
             value="Sign up"
           />
@@ -207,6 +207,10 @@ import Layout from "../layouts/Layout.astro";
     border-color: var(--brand-red);
     outline: var(--brand-red);
     border: 2px solid var(--brand-red);
+  }
+
+  #modal-card {
+    max-height: 730px;
   }
 </style>
 
