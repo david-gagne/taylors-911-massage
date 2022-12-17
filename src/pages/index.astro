@@ -47,24 +47,27 @@ import Layout from "../layouts/Layout.astro";
 
   <div
     id="form-modal"
-    class="w-100 vh-100 fixed top-0 z-999 justify-center items-center helvetica dn"
+    class="w-100 vh-100 fixed top-0 z-999 justify-center helvetica dn"
   >
-    <div id="modal-card" class="w-90 mw6 bg-white ba b--white br4 z-max pv3">
-      <div class="flex justify-center flex-column">
-        <!-- <h2 class="f3 measure-narrow lh-title tc">
-          Thank you for your interest in 911 Massage!
-        </h2> -->
-        <p class="gray f6 lh-copy ph3 bb b--light-gray w-90 center pb3">
-          Thank you for your interest in my new business, <strong
-            >911 Massage</strong
-          >! Go ahead and fill out the little form below so I know it's OK to
-          reach out to you in the future. <br /><br />
+    <div
+      id="modal-card"
+      class="w-90 mw6 bg-white ba b--white br4 z-max pv3 overflow-scroll mv4"
+    >
+      <div class="flex justify-center items-center">
+        <div>
+          <h2 class="f5 lh-title tc w-90 center">
+            Thank you for your interest in my new business, 911 Massage!
+          </h2>
+          <p class="gray f6 lh-copy ph3 bb b--light-gray center pb3">
+            Go ahead and fill out the little form below so I know it's OK to
+            reach out to you in the future. <br /><br />
 
-          <span class="fr">
-            <em> All the best,</em><br />
-            - Taylor
-          </span>
-        </p>
+            <span>
+              <em> All the best,</em><br />
+              - Taylor
+            </span>
+          </p>
+        </div>
       </div>
 
       <form
